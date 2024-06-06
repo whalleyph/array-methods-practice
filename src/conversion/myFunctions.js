@@ -69,7 +69,9 @@ function findAllPeopleWithALongName(inputObjects) {
  * @param {number[]} inputNumbers
  * @return {boolean}
  */
-function areAllNumbersOdd(inputNumbers) {}
+function areAllNumbersOdd(inputNumbers) {
+    return !(inputNumbers.some(num => num%2 === 0));
+}
 
 /** Given an array of strings of various lengths,
  * return true if all of the strings are "long", else false
