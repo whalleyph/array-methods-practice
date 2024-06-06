@@ -25,7 +25,10 @@ function findFirstOddNumber(inputNumbers) {
  * @param {string[]} inputStrings
  * @return {string|undefined}
  */
-function findLastLongString(inputStrings) {}
+function findLastLongString(inputStrings) {
+    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longString[longString.length - 1]
+}
 
 /** Given an array of strings of various lengths,
  * return a new array containing only the "long" strings from the input array
