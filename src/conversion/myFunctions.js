@@ -35,7 +35,10 @@ function findLastLongString(inputStrings) {
  * @param {string[]} inputStrings
  * @returns {string[]}
  * */
-function findAllLongStrings(inputStrings) {}
+function findAllLongStrings(inputStrings) {
+    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longString;
+}
 
 /** given an array of numbers, return a new array containing all the odd numbers in the input array.  Returns an empty array if none are found.
  * @param {number[]} inputNumbers
