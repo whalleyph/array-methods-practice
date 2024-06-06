@@ -8,8 +8,7 @@
  * @return {string|undefined}
  */
 function findFirstLongString(inputStrings) {
-    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longStrings[0]
+    return inputStrings.find(str => str.length > 5)
 }
 
 /** return the first odd number in the given array of numbers, or undefined if none is found.
@@ -17,8 +16,7 @@ function findFirstLongString(inputStrings) {
  * @return {number|undefined}
  */
 function findFirstOddNumber(inputNumbers) {
-    const oddNumbers = inputNumbers.filter(inputNumbers => inputNumbers%2 !== 0)
-    return oddNumbers[0]
+    return inputNumbers.find(num => num%2 !== 0)
 }
 
 /** return the LAST "long" string in the given array of strings, or undefined if none is found.
@@ -26,8 +24,7 @@ function findFirstOddNumber(inputNumbers) {
  * @return {string|undefined}
  */
 function findLastLongString(inputStrings) {
-    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longStrings[longStrings.length - 1]
+    return inputStrings.findLast(str => str.length > 5)
 }
 
 /** Given an array of strings of various lengths,
