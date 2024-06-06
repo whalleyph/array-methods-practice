@@ -36,8 +36,7 @@ function findLastLongString(inputStrings) {
  * @returns {string[]}
  * */
 function findAllLongStrings(inputStrings) {
-    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longStrings;
+    return inputStrings.filter(inputStrings => inputStrings.length > 5);
 }
 
 /** given an array of numbers, return a new array containing all the odd numbers in the input array.  Returns an empty array if none are found.
@@ -45,8 +44,7 @@ function findAllLongStrings(inputStrings) {
  * @return {number[]}
  */
 function findAllOddNumbers(inputNumbers) {
-    const oddNumbers = inputNumbers.filter(inputNumbers => inputNumbers%2 !== 0)
-    return oddNumbers;
+    return inputNumbers.filter(inputNumbers => inputNumbers%2 !== 0);
 }
 
 /** Given an array of mixed types of value
@@ -63,7 +61,9 @@ function findAllTheStrings(inputArray) {
  * @param {{firstName: string, secondName:string}[]} inputObjects
  * @returns {{firstName: string, secondName:string}[]}
  * */
-function findAllPeopleWithALongName(inputObjects) {}
+function findAllPeopleWithALongName(inputObjects) {
+    return inputObjects.filter(inputObjects => inputObjects.firstName.length > 6 || inputObjects.secondName.length > 6)
+}
 
 /** given an array of numbers return true if all of them are odd, else false.
  * @param {number[]} inputNumbers
