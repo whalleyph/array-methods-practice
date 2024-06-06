@@ -8,8 +8,8 @@
  * @return {string|undefined}
  */
 function findFirstLongString(inputStrings) {
-    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longString[0]
+    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longStrings[0]
 }
 
 /** return the first odd number in the given array of numbers, or undefined if none is found.
@@ -26,8 +26,8 @@ function findFirstOddNumber(inputNumbers) {
  * @return {string|undefined}
  */
 function findLastLongString(inputStrings) {
-    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longString[longString.length - 1]
+    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longStrings[longStrings.length - 1]
 }
 
 /** Given an array of strings of various lengths,
@@ -36,15 +36,18 @@ function findLastLongString(inputStrings) {
  * @returns {string[]}
  * */
 function findAllLongStrings(inputStrings) {
-    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
-    return longString;
+    const longStrings = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longStrings;
 }
 
 /** given an array of numbers, return a new array containing all the odd numbers in the input array.  Returns an empty array if none are found.
  * @param {number[]} inputNumbers
  * @return {number[]}
  */
-function findAllOddNumbers(inputNumbers) {}
+function findAllOddNumbers(inputNumbers) {
+    const oddNumbers = inputNumbers.filter(inputNumbers => inputNumbers%2 !== 0)
+    return oddNumbers;
+}
 
 /** Given an array of mixed types of value
  * return a new array containing only those elements of type string.
