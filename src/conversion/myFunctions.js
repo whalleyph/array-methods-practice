@@ -7,7 +7,10 @@
  * @param {string[]} inputStrings
  * @return {string|undefined}
  */
-function findFirstLongString(inputStrings) {}
+function findFirstLongString(inputStrings) {
+    const longString = inputStrings.filter(inputStrings => inputStrings.length > 5)
+    return longString[0]
+}
 
 /** return the first odd number in the given array of numbers, or undefined if none is found.
  * @param {number[]} inputNumbers
