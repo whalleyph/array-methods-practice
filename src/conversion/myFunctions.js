@@ -78,7 +78,9 @@ function areAllNumbersOdd(inputNumbers) {
  * @param {string[]} inputStrings
  * @returns {boolean}
  * */
-function areAllStringsLong(inputStrings) {}
+function areAllStringsLong(inputStrings) {
+    return !(inputStrings.some(str => str.length < 6))
+}
 
 export {
     findFirstLongString,
