@@ -16,7 +16,10 @@ function findFirstLongString(inputStrings) {
  * @param {number[]} inputNumbers
  * @return {number|undefined}
  */
-function findFirstOddNumber(inputNumbers) {}
+function findFirstOddNumber(inputNumbers) {
+    const oddNumbers = inputNumbers.filter(inputNumbers => inputNumbers%2 !== 0)
+    return oddNumbers[0]
+}
 
 /** return the LAST "long" string in the given array of strings, or undefined if none is found.
  * @param {string[]} inputStrings
